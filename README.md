@@ -14,20 +14,17 @@ Stripe
 
 1) Ajouter la librairie Stripe.js dans votre page (ex: base.html.twig).
 
-html`
-
+```html
 <head>
     <script src="https://js.stripe.com/v3/"></script>
 </head>
-
-`
+```
 
 2) Ajouter le bouton qui va rediriger et lancer la session Stripe checkout pour facturer le client.
 
-html`
+```html
 <body>
     <button id="checkout-button">Checkout</button>
-    ```js
     <script type="text/javascript">
       // Create an instance of the Stripe object with your publishable API key
       var stripe = Stripe('pk_test_51I7qCgIjktDIYiezyk245q27khXTpXCzXgu9AMx3A6n1ay8U81Ap7Rt8EpMUwu9kk9qWC2QC5Ymi0MJ9eJahAiBR00gqYitQ6F');
@@ -58,7 +55,7 @@ html`
       });
     </script>
   </body>
-`
+  ```
 
 Usage
 ------------
